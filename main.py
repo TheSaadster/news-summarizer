@@ -27,7 +27,7 @@ def summarize():
     author.insert("1.0", article.authors)
 
     publication.delete("1.0", "end")
-    publication.insert("1.0", article.publish_date)
+    publication.insert("1.0", str(article.publish_date))
 
     summary.delete("1.0", "end")
     summary.insert("1.0", article.summary)
